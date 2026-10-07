@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Crewdent – A passionate skilled crew delivering professional websites, branding, and creative solutions. From Ideas to Digital Impact." />
+  <meta name="keywords" content="digital agency, web design, UI/UX, branding, video editing, social media" />
+  <meta name="author" content="Crewdent" />
+  <title>Crewdent — From Ideas to Digital Impact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">Crewdent</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- PARTICLES CANVAS -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Crew<span>dent</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">✦ Creative Tech Agency</div>
+      <h1 class="hero-title reveal-up">
+        <span class="title-main">Crewdent</span>
+        <span class="title-gradient">Digital Agency</span>
+      </h1>
+      <p class="hero-slogan reveal-up">From Ideas to Digital Impact.</p>
+      <p class="hero-desc reveal-up">A passionate skilled crew crew delivering professional websites, branding, and creative solutions that make your brand unforgettable.</p>
+      <div class="hero-btns reveal-up">
+        <a href="#contact" class="btn btn-primary">Get Started <span class="btn-arrow">→</span></a>
+        <a href="#portfolio" class="btn btn-outline">View Work</a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Projects Done</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Happy Clients</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Team Members</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="hero-card floating">
+        <div class="hcard-header">
+          <div class="hcard-dot green"></div><div class="hcard-dot yellow"></div><div class="hcard-dot red"></div>
+        </div>
+        <div class="hcard-lines">
+          <div class="hcard-line w-80"></div>
+          <div class="hcard-line w-60 accent"></div>
+          <div class="hcard-line w-90"></div>
+          <div class="hcard-line w-50 accent-2"></div>
+          <div class="hcard-line w-70"></div>
+          <div class="hcard-line w-40"></div>
+        </div>
+        <div class="hcard-bar">
+          <span>Landing Page</span><span class="hcard-tag">Live ✓</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-label reveal-up">What We Do</div>
+      <h2 class="section-title reveal-up">Services That <span class="gradient-text">Elevate</span> Your Brand</h2>
+      <p class="section-sub reveal-up">We blend creativity with technology to deliver solutions that stand out.</p>
+      <div class="services-grid">
+        <div class="service-card reveal-up" style="--delay: 0s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3>Website Design</h3>
+          <p>Stunning, responsive websites that convert visitors into customers. Built with modern tech.</p>
+          <span class="service-num">01</span>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.1s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3"/><path d="M6 20v-2a6 6 0 0112 0v2"/><rect x="2" y="14" width="20" height="8" rx="2" opacity=".3"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>User-first interfaces with intuitive flows that delight users and drive engagement.</p>
+          <span class="service-num">02</span>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.2s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </div>
+          <h3>Logo & Branding</h3>
+          <p>Memorable identities that communicate your values and leave lasting impressions.</p>
+          <span class="service-num">03</span>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.3s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 15l5-3-5-3v6z"/></svg>
+          </div>
+          <h3>Video Editing</h3>
+          <p>Cinematic edits and motion graphics that tell your story with visual impact.</p>
+          <span class="service-num">04</span>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.4s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 4s-2.5 2.5-5.5 3.5c-1-1.5-2.5-3.5-5.5-3.5s-6 2.5-6 6 2.5 6 6 6c1.5 0 2.5-.5 3.5-1L22 20"/><path d="M2 20l4-4"/></svg>
+          </div>
+          <h3>Social Media</h3>
+          <p>Content strategies and management that grow your audience and amplify your voice.</p>
+          <span class="service-num">05</span>
+        </div>
+        <div class="service-card service-card--cta reveal-up" style="--delay: 0.5s">
+          <p class="cta-text">Have a project in mind?</p>
+          <a href="#contact" class="btn btn-primary btn-sm">Let's Talk →</a>
+          <div class="cta-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-label reveal-up">Our Work</div>
+      <h2 class="section-title reveal-up">Projects That <span class="gradient-text">Speak</span> for Themselves</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal-up" style="--delay: 0s">
+          <div class="portfolio-img">
+            <div class="port-placeholder" style="--bg: linear-gradient(135deg, #0f4c8a 0%, #6c2bd9 100%)">
+              <div class="port-mockup">
+                <div class="pm-bar"></div>
+                <div class="pm-content"><div class="pm-block"></div><div class="pm-block small"></div></div>
+              </div>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="port-cat">Website Design</span>
+              <h3>EduTech Platform</h3>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" style="--delay: 0.1s">
+          <div class="portfolio-img">
+            <div class="port-placeholder" style="--bg: linear-gradient(135deg, #1a0a4a 0%, #e040fb 100%)">
+              <div class="port-mockup">
+                <div class="pm-logo">✦</div>
+                <div class="pm-shapes"><div class="pm-circle"></div><div class="pm-circle sm"></div></div>
+              </div>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="port-cat">Logo & Branding</span>
+              <h3>Luxe Fashion Brand</h3>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" style="--delay: 0.2s">
+          <div class="portfolio-img">
+            <div class="port-placeholder" style="--bg: linear-gradient(135deg, #002d5e 0%, #00bcd4 100%)">
+              <div class="port-mockup mobile">
+                <div class="pm-phone">
+                  <div class="pm-screen"><div class="pm-row"></div><div class="pm-row short"></div><div class="pm-dot"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="port-cat">UI/UX Design</span>
+              <h3>Fintech Mobile App</h3>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" style="--delay: 0.3s">
+          <div class="portfolio-img">
+            <div class="port-placeholder" style="--bg: linear-gradient(135deg, #0a2a1a 0%, #00e676 100%)">
+              <div class="port-mockup">
+                <div class="pm-bar"></div>
+                <div class="pm-content green"><div class="pm-block"></div><div class="pm-block small"></div><div class="pm-block med"></div></div>
+              </div>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="port-cat">Website Design</span>
+              <h3>SaaS Dashboard</h3>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" style="--delay: 0.4s">
+          <div class="portfolio-img">
+            <div class="port-placeholder" style="--bg: linear-gradient(135deg, #3a1a0a 0%, #ff7043 100%)">
+              <div class="port-mockup video">
+                <div class="pm-play">▶</div>
+                <div class="pm-timeline"><div class="pm-progress"></div></div>
+              </div>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="port-cat">Video Editing</span>
+              <h3>Brand Launch Reel</h3>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" style="--delay: 0.5s">
+          <div class="portfolio-img">
+            <div class="port-placeholder" style="--bg: linear-gradient(135deg, #1a0a2e 0%, #7c4dff 100%)">
+              <div class="port-mockup social">
+                <div class="pm-post"></div><div class="pm-post sm"></div><div class="pm-post xs"></div>
+              </div>
+            </div>
+            <div class="portfolio-overlay">
+              <span class="port-cat">Social Media</span>
+              <h3>Lifestyle Brand Campaign</h3>
+              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section id="team" class="team section">
+    <div class="container">
+      <div class="section-label reveal-up">The People</div>
+      <h2 class="section-title reveal-up">Meet Our <span class="gradient-text">Crew</span></h2>
+      <p class="section-sub reveal-up">A passionate skilled team turning creative ideas into digital realities.</p>
+      <div class="team-grid">
+        <div class="team-card reveal-up" style="--delay: 0s">
+          <div class="team-avatar" style="--color: #4fc3f7">
+            <div class="avatar-placeholder" style="--bg: linear-gradient(135deg, #0d47a1, #4fc3f7)">
+              <span>MH</span>
+            </div>
+          </div>
+          <h3>Monimul Hoque</h3>
+          <span class="team-role">Lead Web Designer</span>
+          <div class="team-skills"><span>HTML/CSS/JS</span><span>Figma</span></div>
+        </div>
+        <div class="team-card reveal-up" style="--delay: 0.1s">
+          <div class="team-avatar" style="--color: #ce93d8">
+            <div class="avatar-placeholder" style="--bg: linear-gradient(135deg, #6a1b9a, #ce93d8)">
+              <span>RA</span>
+            </div>
+          </div>
+          <h3>RIKIB UDDIN AHMED</h3>
+          <span class="team-role">UI/UX Designer</span>
+          <div class="team-skills"><span>Figma</span><span>Prototyping</span></div>
+        </div>
+        <div class="team-card reveal-up" style="--delay: 0.2s">
+          <div class="team-avatar" style="--color: #80cbc4">
+            <div class="avatar-placeholder" style="--bg: linear-gradient(135deg, #00695c, #80cbc4)">
+              <span>DS</span>
+            </div>
+          </div>
+          <h3>DIPAK SHARMA</h3>
+          <span class="team-role">Video Editor</span>
+          <div class="team-skills"><span>Premiere</span><span>After Effects</span></div>
+        </div>
+        <div class="team-card reveal-up" style="--delay: 0.3s">
+          <div class="team-avatar" style="--color: #ffb74d">
+            <div class="avatar-placeholder" style="--bg: linear-gradient(135deg, #e65100, #ffb74d)">
+              <span>SM</span>
+            </div>
+          </div>
+          <h3>Sneha Mehta</h3>
+          <span class="team-role">Brand Designer</span>
+          <div class="team-skills"><span>Illustrator</span><span>Branding</span></div>
+        </div>
+        <div class="team-card reveal-up" style="--delay: 0.4s">
+          <div class="team-avatar" style="--color: #f48fb1">
+            <div class="avatar-placeholder" style="--bg: linear-gradient(135deg, #880e4f, #f48fb1)">
+              <span>AK</span>
+            </div>
+          </div>
+          <h3>AZIZUL KHAN</h3>
+          <span class="team-role">Frontend Dev</span>
+          <div class="team-skills"><span>React</span><span>JavaScript</span></div>
+        </div>
+        <div class="team-card reveal-up" style="--delay: 0.5s">
+          <div class="team-avatar" style="--color: #a5d6a7">
+            <div class="avatar-placeholder" style="--bg: linear-gradient(135deg, #1b5e20, #a5d6a7)">
+              <span>ND</span>
+            </div>
+          </div>
+          <h3>Neha Das</h3>
+          <span class="team-role">Social Media Manager</span>
+          <div class="team-skills"><span>Strategy</span><span>Content</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section id="process" class="process section">
+    <div class="container">
+      <div class="section-label reveal-up">How We Work</div>
+      <h2 class="section-title reveal-up">Our <span class="gradient-text">Process</span></h2>
+      <p class="section-sub reveal-up">From concept to launch — a streamlined journey built for results.</p>
+      <div class="process-steps">
+        <div class="process-step reveal-up" style="--delay: 0s">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="step-num">01</div>
+          <h3>Idea</h3>
+          <p>We dive deep into your vision, goals, and audience to understand the full picture.</p>
+        </div>
+        <div class="process-arrow reveal-up" style="--delay: 0.1s">
+          <svg viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h32M26 4l8 8-8 8"/></svg>
+        </div>
+        <div class="process-step reveal-up" style="--delay: 0.2s">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="step-num">02</div>
+          <h3>Planning</h3>
+          <p>Strategy, wireframes, and timelines crafted to set the project up for success.</p>
+        </div>
+        <div class="process-arrow reveal-up" style="--delay: 0.3s">
+          <svg viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h32M26 4l8 8-8 8"/></svg>
+        </div>
+        <div class="process-step reveal-up" style="--delay: 0.4s">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="step-num">03</div>
+          <h3>Execution</h3>
+          <p>Our crew gets to work — designing, building, and iterating with precision and care.</p>
+        </div>
+        <div class="process-arrow reveal-up" style="--delay: 0.5s">
+          <svg viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h32M26 4l8 8-8 8"/></svg>
+        </div>
+        <div class="process-step reveal-up" style="--delay: 0.6s">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="step-num">04</div>
+          <h3>Delivery</h3>
+          <p>We deliver on time, with full handoff support and post-launch assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-label reveal-up">Client Love</div>
+      <h2 class="section-title reveal-up">What They <span class="gradient-text">Say</span></h2>
+      <div class="testimonial-carousel reveal-up">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-slide">
+            <div class="quote-icon">❝</div>
+            <p class="quote-text">"Crewdent transformed our online presence completely. The website they built for us looks better than agencies charging 5x more. Absolutely blown away by the quality!"</p>
+            <div class="quote-author">
+              <div class="quote-avatar">MR</div>
+              <div>
+                <strong>Meera Reddy</strong>
+                <span>Founder, Bloom Boutique</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="quote-icon">❝</div>
+            <p class="quote-text">"Incredible team. They understood our brand voice instantly and created visuals that perfectly captured our startup's energy. Delivered ahead of schedule too!"</p>
+            <div class="quote-author">
+              <div class="quote-avatar">VK</div>
+              <div>
+                <strong>Vikram Kohli</strong>
+                <span>CEO, SparkTech Ventures</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="quote-icon">❝</div>
+            <p class="quote-text">"From the logo to the full social media strategy — Crewdent nailed it. Our engagement tripled in two months. Highly recommend this crew to any growing brand."</p>
+            <div class="quote-author">
+              <div class="quote-avatar">AT</div>
+              <div>
+                <strong>Ananya Thomas</strong>
+                <span>Marketing Head, NovaMart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots" id="testimonial-dots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+        </div>
+        <button class="carousel-btn prev" id="prev-btn" aria-label="Previous">‹</button>
+        <button class="carousel-btn next" id="next-btn" aria-label="Next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-label reveal-up">Get In Touch</div>
+      <h2 class="section-title reveal-up">Start Your <span class="gradient-text">Project</span></h2>
+      <p class="section-sub reveal-up">Tell us about your idea and we'll get back to you within 24 hours.</p>
+      <div class="contact-wrapper">
+        <div class="contact-form-wrap reveal-up">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="project">Project Type</label>
+                <select id="project" name="project">
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Website Design</option>
+                  <option>UI/UX Design</option>
+                  <option>Logo & Branding</option>
+                  <option>Video Editing</option>
+                  <option>Social Media</option>
+                  <option>Full Package</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select budget</option>
+                  <option>Under ₹5,000</option>
+                  <option>₹5,000 – ₹15,000</option>
+                  <option>₹15,000 – ₹30,000</option>
+                  <option>₹30,000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, and timeline..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message <span class="btn-arrow">→</span>
+            </button>
+            <div class="form-success" id="form-success">
+              ✓ Message sent! We'll get back to you soon.
+            </div>
+          </form>
+        </div>
+        <div class="contact-info reveal-up">
+          <div class="info-card">
+            <h3>Let's Create Together</h3>
+            <p>Whether you're a startup, student club, or local business — we're here to make your brand shine.</p>
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-icon">✉</div>
+                <span>hello@crewdent.in</span>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <span>India — Working Remotely Worldwide</span>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">⏱</div>
+                <span>Response within 24 hours</span>
+              </div>
+            </div>
+            <a href="https://wa.me/919864978903" class="btn-whatsapp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Crew<span>dent</span></div>
+          <p>From Ideas to Digital Impact.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Website Design</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Logo & Branding</a></li>
+            <li><a href="#services">Video Editing</a></li>
+            <li><a href="#services">Social Media</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Crewdent. All rights reserved. Built with passion.</p>
+        <p>Made in India 🇮🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919864978903" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
